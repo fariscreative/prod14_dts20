@@ -1,4 +1,4 @@
-  * {
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -35,7 +35,7 @@
   header {
       width: 100%;
       height: 50px;
-      background-color: rgba(34, 49, 52, 0.9);
+      background-color: rgba(42, 47, 71, 0.9);
       font-family: "century gothic";
       position: fixed;
       top: 0;
@@ -154,9 +154,150 @@
       margin-right: 5px;
   }
   
+  .our-bio{
+    text-align:center;
+    font-family:"Century Gothic";
+    background-color:#2a2f47;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.containerr {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+ .headingg {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color:#ffffff;
+    font-size:25px;
+  }
+
+.profile{
+    padding:20px 5px 400px 5px;
+    margin-right:2px;
+    margin-left:2px;
+}
+
+.ava{
+    float:left;
+    width:20%;
+}
+
+.ava img{
+    width:175px;
+    height:175px;
+    border:8px solid #ffffff;
+    border-radius:50%;
+}
+
+.ava h2{
+    color:#caf200;
+    font-size:18px;
+}
+
+.ava p{
+    color:#ffffff;
+    font-size:15px;
+}
+
+.btn-wrapperr{
+    margin-top:2px;
+}
+
+.btnn {
+    padding: 15px 27px;
+    color: white;
+    display: inline-block;
+    opacity: 0.9;
+    border-radius:30px;
+    text-align: center;
+    margin:5px 15px;
+    font-size:15px;
+    cursor: pointer;
+}
+
+.btnn:hover {
+    opacity: 1;
+}
+
+.dana{
+    background-color:#4fcc4f;
+}
+
+.daftar{
+    background-color:#478fcf;
+}
+
+
+body {
+  font-family: "Century Gothic";
+}
+
+li {
+  list-style: none;
+}
+
+.section-title {
+	font-size: 35px;
+}
+
+.contact-form {
+	background-image : url(4f.png);
+	background-size: cover;
+}
+
+.contact-form {
+  padding-top: 100px;
+  padding-left: 70px;
+  text-align: left;
+  font-size: 20px;
+  padding-bottom: 100px;
+}
+
+/* Tambahkan CSS untuk tags <input> dan <textarea> */
+input, textarea {
+  width: 350px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 15px;
+  border: 1px solid #dee7ec;
+  border-radius: 50px;
+}
+
+/* Tambahkan CSS untuk contact-submit */
+.contact-submit {
+	padding: 15px 27px;
+    color: white;
+    display: inline-block;
+    opacity: 0.9;
+    border-radius:30px;
+	margin:5px 15px;
+    font-size:15px;
+    cursor: pointer;
+  background-color: #4fcc4f;
+  color: #ffffff;
+  
+}
+
+.contact-submit:hover {
+	opacity: 1;
+}
+
+.main-background {
+	background-size: cover;
+	
+	
+}
+  
+  
   footer {
       width: 100%;
-      background-color: rgba(34, 49, 52, 0.9);
+      background-color: rgba(42, 47, 71, 0.9);
       color: white;
       font-family: "century gothic";
       padding-top: 20px;
