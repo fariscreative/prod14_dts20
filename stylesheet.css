@@ -1,3 +1,4 @@
+  
 
 * {
 	margin: 0;
@@ -73,7 +74,7 @@ header {
 .top-wrapper {
 	padding-top: 180px;
 	padding-bottom: 100px;
-	background-image: url("gambar_logo.png");
+	background-image: url("https://github.com/fariscreative/D14_DTS20/blob/master/gambar_logo.png?raw=true");
 	background-size: cover;
 	
 }
@@ -147,4 +148,3 @@ header {
 .fa {
 	margin-right: 5px;
 }
-
