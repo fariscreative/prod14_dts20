@@ -2,6 +2,23 @@
     .top-wrapper h1 {
         font-size: 32px;
     }
+	
+	.ava {
+      width: 50%;
+      margin-bottom: 50px;
+    }
+    
+    .headingg {
+      font-size: 20px;
+    }
+
+    .containerr{
+        height:1315px;
+    }
+
+    .btnn{
+        font-size:15px;
+    }
 }
 
 @media (max-width: 670px) {
@@ -29,6 +46,19 @@
     .btn-wrapper {
         width: 100%;
     }
+	
+	.ava {
+      width: 100%;
+    }
+
+    .containerr{
+        height:2300px;
+    }
+
+    .btnn{
+        font-size:15px;
+    }
+	
     footer {
         position: static;
     }
