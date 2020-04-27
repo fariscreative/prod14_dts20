@@ -1,166 +1,175 @@
 * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-  }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
   
-  @font-face {
-      font-family: "century gothic";
-      src: url("century-gothic/GOTHIC.ttf");
-  }
+@font-face {
+    font-family: "century gothic";
+    src: url("century-gothic/GOTHIC.ttf");
+}
   
-  @font-face {
-      font-family: "CenturyGothic";
-      src: url("/fonts/CenturyGothic/CenturyGothic.eot");
-      src: url("/fonts/CenturyGothic/CenturyGothic.woff") format("woff");
-      src: url("/fonts/CenturyGothic/CenturyGothic.svg") format("svg");
-      src: url("/fonts/CenturyGothic/CenturyGothic.ttf") format("truetype");
-  }
+@font-face {
+    font-family: "CenturyGothic";
+    src: url("/fonts/CenturyGothic/CenturyGothic.eot");
+    src: url("/fonts/CenturyGothic/CenturyGothic.woff") format("woff");
+    src: url("/fonts/CenturyGothic/CenturyGothic.svg") format("svg");
+    src: url("/fonts/CenturyGothic/CenturyGothic.ttf") format("truetype");
+}
+
+@keyframes fadeIn1 {
+    from {top: 200px; opacity:0;}
+    to {top: 0px; opacity:1;}
+}
+
+body {
+    margin: 0;
+    font-family: "century gothic";
+    position: relative;
+    animation-name: fadeIn1;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+}
   
-  body {
-      margin: 0;
-      font-family: "century gothic";
-  }
+a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
   
-  a {
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: bold;
-  }
+li {
+    list-style: none;
+}
   
-  li {
-      list-style: none;
-  }
+header {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(42, 47, 71, 0.9);
+    font-family: "century gothic";
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
   
-  header {
-      width: 100%;
-      height: 50px;
-      background-color: rgba(42, 47, 71, 0.9);
-      font-family: "century gothic";
-      position: fixed;
-      top: 0;
-      z-index: 10;
-  }
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
   
-  .container {
-      width: 100%;
-      margin: 0 auto;
-      padding: 0 50px;
-  }
+.header-left {
+    float: left;
+}
   
-  .header-left {
-      float: left;
-  }
+.header-right {
+    float: right;
+    /*display: inline-block;*/
+    margin-right: -10px;
+    animation-name: fadeIn2;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+}
   
-  .header-right {
-      float: right;
-      /*display: inline-block;*/
-      margin-right: -10px;
-  }
+.header-right a {
+    color: white;
+    line-height: 50px;
+    padding: 0 10px;
+    transition: all 0.8s;
+    display: block;
+    float: left;
+}
   
-  .header-right a {
-      color: white;
-      line-height: 50px;
-      padding: 0 10px;
-      transition: all 0.8s;
-      display: block;
-      float: left;
-  }
+.header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
   
-  .header-right a:hover {
-      background-color: rgba(255, 255, 255, 0.3);
-  }
+.logo {
+    width: 150px;
+    height: 25px;
+    margin-top: 15px;
+}
   
-  .logo {
-      width: 150px;
-      height: 25px;
-      margin-top: 15px;
-  }
+.top-wrapper {
+    padding-top: 180px;
+    padding-bottom: 100px;
+    background-image: url("gambar_logo.png");
+    background-size: cover;
+}
   
-  .top-wrapper {
-      padding-top: 180px;
-      padding-bottom: 100px;
-      background-image: url("gambar_logo.png");
-      background-size: cover;
-  }
+.top-wrapper h1 {
+    font-weight: bold;
+    font-size: 45px;
+    opacity: 0.8;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
   
-  .top-wrapper h1 {
-      font-weight: bold;
-      font-size: 45px;
-      opacity: 0.8;
-      letter-spacing: 3px;
-      margin-bottom: 10px;
-  }
+.top-wrapper p {
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
   
-  .top-wrapper p {
-      opacity: 0.8;
-      margin-bottom: 30px;
-  }
+.heading {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: #5f5d60;
+}
   
-  .heading {
-      padding-top: 60px;
-      padding-bottom: 30px;
-      color: #5f5d60;
-  }
+.heading h2 {
+    font-weight: normal;
+}
   
-  .heading h2 {
-      font-weight: normal;
-  }
+.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 10px 0;
+    display: none;
+}
   
-  .menu-icon {
-      color: white;
-      float: right;
-      font-size: 25px;
-      padding: 10px 0;
-      display: none;
-  }
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: block;
+    opacity: 0.8;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
   
-  .btn {
-      padding: 12px 24px;
-      color: white;
-      display: block;
-      opacity: 0.8;
-      width: 100%;
-      margin: 0 auto;
-      border-radius: 20px;
-  }
+.btn:hover {
+    opacity: 1;
+}
   
-  .btn:hover {
-      opacity: 1;
-  }
+.signup {
+    background-color: #239b76;
+    margin-bottom: 10px;
+}
   
-  .signup {
-      background-color: #239b76;
-      margin-bottom: 10px;
-  }
+.facebook {
+    background-color: #3b5998;
+    margin-bottom: 10px;
+}
   
-  .facebook {
-      background-color: #3b5998;
-      margin-bottom: 10px;
-  }
+.twitter {
+    background-color: #55acee;
+}
   
-  .twitter {
-      background-color: #55acee;
-  }
+.btn-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    text-align: center;
+}
   
-  .btn-wrapper {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      width: 300px;
-      text-align: center;
-  }
+.fa {
+    margin-right: 5px;
+}
   
-  .fa {
-      margin-right: 5px;
-  }
-  
-  .our-bio{
+.our-bio{
     text-align:center;
     font-family:"Century Gothic";
     background-color:#2a2f47;
-	padding-top: 100px;
-	padding-bottom: 100px
-	
 }
 
 .containerr {
@@ -168,14 +177,15 @@
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
-  }
+}
 
  .headingg {
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top:50px;
+    margin-top: 40px;
+    margin-bottom: 50px;
     color:#ffffff;
-    font-size:25px;
-  }
+    font-size:28px;
+}
 
 .profile{
     padding:20px 5px 400px 5px;
@@ -186,6 +196,7 @@
 .ava{
     float:left;
     width:20%;
+
 }
 
 .ava img{
@@ -210,13 +221,13 @@
 }
 
 .btnn {
-    padding: 15px 27px;
+    padding: 20px 27px;
     color: white;
     display: inline-block;
     opacity: 0.9;
     border-radius:30px;
     text-align: center;
-    margin:5px 15px;
+    margin:10px 15px 35px 15px;
     font-size:15px;
     cursor: pointer;
 }
@@ -233,17 +244,12 @@
     background-color:#478fcf;
 }
 
-
-body {
-  font-family: "Century Gothic";
-}
-
 li {
   list-style: none;
 }
 
-.section-title {
-	font-size: 35px;
+.contact-title {
+	font-size: 25px;
 }
 
 .contact-form {
@@ -255,15 +261,15 @@ li {
   padding-top: 100px;
   padding-left: 70px;
   text-align: left;
-  font-size: 20px;
+  font-size: 15px;
   padding-bottom: 100px;
 }
 
 /* Tambahkan CSS untuk tags <input> dan <textarea> */
 input, textarea {
-  width: 200px;
+  width: 350px;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   padding: 10px;
   font-size: 15px;
   border: 1px solid #dee7ec;
@@ -272,7 +278,7 @@ input, textarea {
 
 /* Tambahkan CSS untuk contact-submit */
 .contact-submit {
-	padding: 15px 27px;
+	padding: 10px 15px;
     color: white;
     display: inline-block;
     opacity: 0.9;
@@ -280,8 +286,8 @@ input, textarea {
 	margin:5px 15px;
     font-size:15px;
     cursor: pointer;
-  background-color: #4fcc4f;
-  color: #ffffff;
+    background-color: #4fcc4f;
+    color: #ffffff;
   
 }
 
@@ -290,33 +296,31 @@ input, textarea {
 }
 
 .main-background {
-	background-size: cover;
-	
-	
+	background-size: cover;	
 }
   
-  
   footer {
-      width: 100%;
-      background-color: rgba(42, 47, 71, 0.9);
-      color: white;
-      font-family: "century gothic";
-      padding-top: 20px;
-      padding-bottom: 15px;
-      position: relative;
-  }
+    width: 100%;
+    background-color: rgba(42, 47, 71, 0.9);
+    color: white;
+    font-family: "century gothic";
+    padding-top: 20px;
+    padding-bottom: 15px;
+    position: relative;
+}
   
   footer h2 {
-      font-weight: lighter;
-      display: block;
-      text-align: center;
-	  font-size: 12px;
-  }
+    width:100%;
+    font-weight: lighter;
+    display: block;
+    text-align: center;
+	font-size: 12px;
+}
   
   footer img {
-      width: 120px;
-      position: absolute;
-      left: 85%;
-      top: 50%;
-      transform: translateY(-50%);
-  }
+    width: 120px;
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    transform: translateY(-50%);
+}
