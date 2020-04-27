@@ -47,7 +47,7 @@
         font-size: 14px;
     }
     .btn-wrapper {
-        width: 60%;
+        width: 100%;
     }
 	
 	.ava {
@@ -61,9 +61,15 @@
     .btnn{
         font-size:15px;
     }
+	
 	.contact-form {
 		width: 100%;
 	}
+	
+	input, textarea {
+		width: 100%
+	}
+	
     footer {
         position: static;
     }
